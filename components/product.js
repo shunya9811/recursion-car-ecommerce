@@ -6,8 +6,8 @@ var product = {
             <h5 class="card-title pt-2">{{ product.name }}</h5>
             <p class="card-text">Category: {{ product.category }}</p>
             <p class="card-text">Price: $<span>{{ product.price | number_format }}</span></p>
-            <p class="card-text">Date: {{ product.date }}</p>  
+            <p class="card-text">Date: {{ product.date | date_format }}</p>  
         </div>
     </div>`,
-    props: ['products']
+    props: ['product']
 };

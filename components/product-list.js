@@ -9,7 +9,7 @@ Vue.component('product-list', {
             v-on:sortOrderChanged = "sortOrderChanged"
         >
         </product-header>
-        <div class="d-flex flex-wrap justify-content-between pt-4">
+        <div class="list">
             <product
                 v-for="product in filteredList"
                 v-bind:product="product"
@@ -26,9 +26,9 @@ Vue.component('product-list', {
     data: function() {
         return {
             //カテゴリー
-            showItem: "",
+            showItem: "Category",
             //並び替えの選択値
-            sortOrder: 1
+            sortOrder: "Sort by:"
         }
     },
     methods: {
@@ -50,7 +50,7 @@ Vue.component('product-list', {
                 //表示対象かどうかを判定するフラグ
                 var isShow = true;
                 //i番目の商品が表示対象かどうか判定する
-                if (this.showItem != "" && this.showItem != this.products[i].category) {
+                if (this.showItem != "Category" && this.showItem != this.products[i].category) {
                     isShow = false;
                 }
                 

@@ -10,8 +10,8 @@ var productHeader = {
             </div>
             <div class="d-flex">
                 <div class="mx-3">
-                    <select class="form-select" aria-label="Default select example" v-bind:value="showItem" v-on:change="$emit('showItemChanged', $event.targer.value)">
-                        <option selected="selected">Category</option>
+                    <select class="form-select" aria-label="Default select example" v-bind:value="showItem" v-on:change="$emit('showItemChanged', $event.target.value)">
+                        <option selected>Category</option>
                         <option value="Tesla">Telsa</option>
                         <option value="Porsche">Porsche</option>
                         <option value="Toyota">Toyota</option>
@@ -26,7 +26,7 @@ var productHeader = {
                 </div>
                 <div>
                     <select class="form-select" aria-label="Default select example" v-bind:value="sortOrder" v-on:change="$emit('sortOrderChanged',parseInt($event.target.value))">
-                        <option selected="selected">Sort by:</option>
+                        <option selected>Sort by:</option>
                         <option value="1">Price: Low to High</option>
                         <option value="2">Price: High to Low</option>
                         <option value="3">Newest Arrivals</option>

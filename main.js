@@ -21,7 +21,7 @@ var app = new Vue({
             {id: 17, name: 'Aventador', category: 'Lamborghini', price: 393695, date: 20200911, image: './images/Aventador.jpg'},
             {id: 18, name: 'A3', category: 'Audi', price: 33500, date: 20190508, image: './images/A3.jpg'}, 
             {id: 19, name: 'X3', category: 'BMW', price: 43000, date: 20180311, image: './images/X3.jpg'},
-            {id: 20, name: '2 Series', category: 'BMW', price: 37500, date: 20190115, image: '/images/2Series.jpg'}
+            {id: 20, name: '2 Series', category: 'BMW', price: 37500, date: 20190115, image: './images/2Series.jpg'}
         ]
     }
 });
